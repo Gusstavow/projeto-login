@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,48 @@
     <link rel="stylesheet" href="estilos/style.css">
     <title>Login</title>
 </head>
+
 <body>
     <main>
         <section id="login">
 
             <div id="imagem">
-                imagem
+                
 
             </div>
 
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faca login para acessar sua conta e poder fazer as configuracoes no seu ambiente</p>
+                <p>Seja bem-vindo(a) novamente. Faca login para acessar sua conta e poder fazer as configuracoes no seu
+                    ambiente</p>
+                <form action="cadastro.php" method="post" autocomplete="on">
+
+                    <div class="usuario">
+                        <label for="id-usuario">Icon usuario</label>
+                        <input type="text" name="usuario" id="id-usuario" autocomplete="email" required placeholder="Usuario">
+                    </div>
+
+                    <div class="senha">
+                        <label for="id-senha">Icon senha</label>
+                        <input type="password" name="senha" id="id-senha" required autocomplete="current-password" minlength="8" placeholder="Senha">
+                    </div>
+
+                    <div  class="submit">
+                        <input type="submit" value="Entrar">
+                        
+                    </div>
+
+                    <div class="esqueci-senha">
+
+                        <a href="#">Esqueci minha senha</a>
+
+                    </div>
+
+                </form>
 
             </div>
         </section>
     </main>
 </body>
+
 </html>

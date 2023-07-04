@@ -4,4 +4,114 @@
 
 verde : #49a09d
 Lilas : #5f2c82*/
+:root{
+    --cor1: #5f2c82;
+    --cor2: #49a09d;
 
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--cor1);
+    
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+}
+
+div#formulario{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div#formulario .submit>input{
+    
+    width: 280px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    
+
+
+    
+
+    
+}
+
+div#formulario .esqueci-senha>a{
+    width: 280px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    display: block;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 5px;
+    border: 1px solid black;
+    
+}
+
+
+
+
+div#formulario>h1{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+div#formulario>p{
+    font-size: 1.1em;
+    padding-bottom: 10px;
+    
+    text-indent: 20px;
+}
+
+section#login{
+    
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.363);
+   
+    
+}
+
+
+
+div#imagem{
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(../imagens/pattern.jpg);
+    height: 300px;
+    
+    background-size: cover;
+}
+
+div.usuario,div.senha{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
+
+div.usuario:hover,div.senha:hover{
+    background-color: #49a09d;
+
+}
