@@ -37,46 +37,15 @@ main{
     
 }
 
-
-
-div#formulario .submit>input{
-    
-    width: 280px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    height: 30px;
-    
-
-
-    
-
-    
-}
-
-div#formulario .esqueci-senha>a{
-    width: 280px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    height: 30px;
-    display: block;
-    background-color: #ffffff;
-    text-align: center;
-    padding-top: 5px;
-    border: 1px solid black;
-    
-}
-
-
-
-
 div#formulario>h1{
-    font-size: 1.5em;
-    padding-bottom: 10px;
+    
+    
     text-align: center;
+    margin-bottom: 10px;
 }
 
 div#formulario>p{
-    font-size: 1.1em;
+    font-size: 0.8em;
     padding-bottom: 10px;
     
     text-indent: 20px;
@@ -86,14 +55,13 @@ section#login{
     overflow: hidden;
     border-radius: 10px;
     width: 250px;
-    height: 500px;
+    height: 515px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
-   
-    
+
 }
 
 div#formulario{
@@ -104,8 +72,6 @@ div#formulario{
     display: block;
 
 }
-
-
 
 div#imagem{
     display: block;
@@ -118,15 +84,81 @@ div#imagem{
     background-size: cover;
 }
 
-div.usuario,div.senha{
-    background-color: var(--cor1);
-    padding: 10px;
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor2);
+    color: white;
+    border: none;
     border-radius: 5px;
-    margin-bottom: 5px;
-
+    cursor: pointer;
 }
 
-div.usuario:hover,div.senha:hover{
-    background-color: #49a09d;
+form > input[type=submit]:hover{
+    background-color: #306967;
+}
 
+form > a.botao{
+    padding-top: 5px;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid var(--cor2);
+    border-radius: 5px;
+    color: #306967;
+    text-decoration: none;
+}
+form > a.botao:hover{
+    background-color: #62d8d4;
+}
+
+form  a.botao  span{
+    font-size: 0.8em;
+    
+}
+
+form > div.campo{
+    border: 3px solid var(--cor1);
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor1);
+    width: 100%;
+   
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+div.campo > span{
+    color: white;
+    
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+
+}
+div.campo > input:focus-within{
+    background-color: white;
+    
+}
+
+div.campo > input{
+   
+    background-color:#55c4c0 ;
+    font-size: 1em;
+   height: 100%;
+   width: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
 }

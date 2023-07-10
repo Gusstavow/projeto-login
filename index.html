@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Login</title>
 </head>
 
@@ -15,7 +16,7 @@
         <section id="login">
 
             <div id="imagem">
-                
+
 
             </div>
 
@@ -23,28 +24,42 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faca login para acessar sua conta e poder fazer as configuracoes no seu
                     ambiente</p>
-                <form action="cadastro.php" method="post" autocomplete="on">
+                <form action="login.php" method="post" autocomplete="on">
 
-                    <div class="usuario">
-                        <label for="id-usuario">Icon usuario</label>
-                        <input type="text" name="usuario" id="id-usuario" autocomplete="email" required placeholder="Usuario">
-                    </div>
+                    <div class="campo">
+                        <span class="material-icons">
+                            person
+                        </span>
 
-                    <div class="senha">
-                        <label for="id-senha">Icon senha</label>
-                        <input type="password" name="senha" id="id-senha" required autocomplete="current-password" minlength="8" placeholder="Senha">
-                    </div>
-
-                    <div  class="submit">
-                        <input type="submit" value="Entrar">
                         
+                            <input type="email" name="login" id="ilogin" autocomplete="email" required
+                                placeholder="Seu email">
+                        
+                        <label for="ilogin">Login</label>
                     </div>
 
-                    <div class="esqueci-senha">
+                    <div class="campo">
+                        <span class="material-icons">
+                            vpn_key
+                        </span>
 
-                        <a href="#">Esqueci minha senha</a>
-
+                        <input type="password" name="senha" id="isenha" required autocomplete="current-password"
+                            minlength="8" maxlength="20" placeholder="Sua Senha">
+                        <label for="isenha">Senha</label>
                     </div>
+
+
+                    <input type="submit" value="Entrar">
+
+
+                    <a href="#" class="botao">Esqueci minha senha
+                        <span class="material-icons">
+                            mail
+                        </span>
+                    </a>
+                    
+
+
 
                 </form>
 
